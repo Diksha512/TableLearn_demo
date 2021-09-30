@@ -1,0 +1,20 @@
+
+
+<div class="jumbotron">
+   
+    <table class="table table-striped border text-center col-lg-12" >
+       <tr>
+           <th maxlength="10">User Id </th>
+           <th>User name</th>
+           <th>User Username</th>
+           <th>User Email</th>
+       </tr>
+       <tr *ngFor="let user of user" >
+        <td  > <p maxlength="20"> {{user.avatar}}  </p></td>
+        <td    >  <p > {{user.firstName}} </p></td> 
+        <td> {{user.username}} </td>
+        <td> {{user.email}} </td>
+    </tr>
+     </table>
+</div>
+

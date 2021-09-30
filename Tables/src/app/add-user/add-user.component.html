@@ -1,0 +1,11 @@
+<div class="container-fluid m-auto  center_line" >
+    <form   class="text-center" #addCustomerForm="ngForm" (submit)="addCustomer(addCustomerForm)"  >
+      <div class="inside" > <input type="text" required name="id" placeholder="id" [(ngModel)]="avatar" minlength="10"></div> 
+       <div class="inside"> <input type="text" required name="name" placeholder="name" [(ngModel)]="firstName"> </div> 
+        <div class="inside"><input type="text" required name="username" placeholder="username" [(ngModel)]="username">  </div>
+      <div class="inside">  <input type="text" required name="email" placeholder="email" [(ngModel)]="email"> </div>
+   <div class="inside"> <button type="submit"  class="btn btn-primary"  (click)="addCustomer(addCustomerForm)"> Add User</button></div>
+    <!--<button class="btn btn-link" (click)="resetForm(addCustomerForm)">reset</button>
+    <button class="btn btn-link" (click)="setValues(addCustomerForm)">set form values</button>-->
+    </form>
+</div>
